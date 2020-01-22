@@ -3,16 +3,101 @@
     <head>
         <meta charset="UTF-8">
         <title>Museum</title>
+        <style>
+            body{
+                background-color:rgb(78, 78, 255);
+                color: honeydew;
+                font-family: "Arimo", arial, verdana, sans-serif;
+                font-size: 30px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Oh deeeeer</h1>
-        <p id="text">Alrighty, let's see if we can get this to work on GitHub</p>
-        <script>
-            var text = document.getElementById("text");
+        <audio src="" id="lyd"></audio>
+        
+        <div id="texter">
+            <h1>Klikk på forfatteren du vil høre om</h1>
 
-            text.onclick = function(){
-                text.innerHTML = "It works!"
+            <p id="text1">Wergeland</p>
+            <p id="text2">Mary Shelley</p>
+            <p id="text3">This one also works</p>
+            <p id="text4">OOOOOOOO</p>
+            <p id="text5">OOOOOOOO</p>
+            <p id="text6">OOOOOOOO</p>
+            <p id="text7">OOOOOOOO</p>
+            <p id="text8">OOOOOOOO</p>
+        </div>
+        
+
+        <script>
+
+            
+
+            var text1 = document.getElementById("text1");
+            var text2 = document.getElementById("text2");
+            var text3 = document.getElementById("text3");
+            var text4 = document.getElementById("text4");
+            var text5 = document.getElementById("text5");
+            var text6 = document.getElementById("text6");
+            var text7 = document.getElementById("text7");
+            var text8 = document.getElementById("text8");
+            var lyd = document.getElementById("lyd");
+            
+
+            text1.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src="alke.mp3"
+                lyd.play();
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+                
+
             }
+            text2.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src="fossekall.mp3"
+                lyd.play();
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text3.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src="dompap.mp3"
+                lyd.play();
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text4.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src=""
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text5.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src=""
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text6.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src=""
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text7.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src=""
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+            text8.onclick = function(){
+                texter.innerHTML = "It works!"
+                lyd.src=""
+
+                texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
+            }
+
 
         </script>
     </body>
