@@ -31,7 +31,7 @@
             
             <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-teal w3-padding-16" id="text2">Mary Shelley</a>
             <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-dark-grey w3-padding-16" id="text3">This one also works</a>
-            <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-brown w3-padding-16" id="text4">OOOOOOOO</a>
+            <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-brown w3-padding-16" id="text4">Maurits Hansen</a>
             <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-blue-grey w3-padding-16"  id="text5">OOOOOOOO</a>
             <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-teal w3-padding-16" id="text6">OOOOOOOO</a>
             <a class="w3-button w3-border w3-block w3-animate-zoom w3-hover-dark-grey w3-padding-16" id="text7">OOOOOOOO</a>
@@ -55,7 +55,7 @@
             
 
             text1.onclick = function(){
-                texter.innerHTML = "It works!"
+                texter.innerHTML = 
                 lyd.src="alke.mp3"
                 lyd.play();
 
@@ -64,7 +64,7 @@
 
             }
             text2.onclick = function(){
-                texter.innerHTML = "It works!"
+                texter.innerHTML = `<p>Maurits Hansen<p> <img src="mary_shelley.jpg" ALIGN="left" height="350" width="250">`
                 lyd.src="fossekall.mp3"
                 lyd.play();
 
@@ -78,8 +78,9 @@
                 texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
             }
             text4.onclick = function(){
-                texter.innerHTML = "It works!"
-                lyd.src=""
+                texter.innerHTML = `<p>Maurits Hansen<p> <img src="maurits_hansen.jpg" ALIGN="left" height="350" width="250">`
+                lyd.src="haben.mp4"
+                lyd.play();
 
                 texter.innerHTML += `<br></br><br></br><button onClick="history.go(0);">Gå Tilbake</button>`
             }
